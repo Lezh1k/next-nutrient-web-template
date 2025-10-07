@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 interface NutrientInstance {
   // Add methods and properties as needed based on your NutrientViewer instance
-  [key: string]: any;
+  [key: string]: undefined;
 }
 
 declare global {
