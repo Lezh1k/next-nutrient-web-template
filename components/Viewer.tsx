@@ -11,8 +11,8 @@ export default function Viewer({ document }: ViewerProps) {
 
 	useEffect(() => {
 		const container = containerRef.current;
-
 		const { NutrientViewer } = window;
+    console.log("111", NutrientViewer, window);
 		if (container && NutrientViewer) {
 			NutrientViewer.load({
 				container,
