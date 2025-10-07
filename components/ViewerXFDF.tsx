@@ -2,17 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 
-interface NutrientInstance {
-  // Add methods and properties as needed based on your NutrientViewer instance
-  [key: string]: undefined;
-}
-
-declare global {
-  interface Window {
-    instance: NutrientInstance;
-  }
-}
-
 interface ViewerProps {
   document: string | ArrayBuffer;
 }
