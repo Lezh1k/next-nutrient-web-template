@@ -11,7 +11,6 @@ export default function Viewer({ document }: ViewerProps) {
 
 	useEffect(() => {
 		const container = containerRef.current;
-
 		const { NutrientViewer } = window;
 		if (container && NutrientViewer) {
 			NutrientViewer.load({
@@ -19,7 +18,6 @@ export default function Viewer({ document }: ViewerProps) {
 				document: document,
 				allowLinearizedLoading: true,
 			}).then((instance) => {
-				// Instance loaded successfully
 				window.instance = instance;
 			});
 		}
